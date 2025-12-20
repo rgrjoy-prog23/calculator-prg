@@ -1,4 +1,4 @@
-import BasicCalculator from "@/components/BasicCalculator";
+import AdvanceCalculator from "@/components/AdvanceCalculator";
 import {
 	Card,
 	CardContent,
@@ -8,8 +8,8 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Basic | Calculator Prg App",
-	description: "Basic off a Calculator Prg App",
+	title: "Advance | Calculator Prg App",
+	description: "Advance of a Calculator Prg App",
 };
 
 const page = () => {
@@ -18,12 +18,12 @@ const page = () => {
 			<Card className="grid gap-4">
 				<CardHeader>
 					<CardTitle className="text-center text-2xl font-semibold">
-						Basic Calculator
+						Advance Calculator
 					</CardTitle>
 				</CardHeader>
 
 				<CardContent>
-					<BasicCalculator />
+					<AdvanceCalculator />
 				</CardContent>
 			</Card>
 		</section>
