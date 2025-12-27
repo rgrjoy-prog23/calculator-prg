@@ -22,18 +22,19 @@ const AdvanceCalculator = () => {
 					<SelectValue placeholder="Operator" />
 				</SelectTrigger>
 				<SelectContent>
-					<SelectItem value="light">
+					<SelectItem value="plus">
 						<PlusIcon />
 					</SelectItem>
 
-					<SelectItem value="light">
+					<SelectItem value="minus">
 						<MinusIcon />
 					</SelectItem>
 
-					<SelectItem value="light">
+					<SelectItem value="multiply">
 						<X />
 					</SelectItem>
-					<SelectItem value="light">
+
+					<SelectItem value="divide">
 						<DivideIcon />
 					</SelectItem>
 				</SelectContent>
