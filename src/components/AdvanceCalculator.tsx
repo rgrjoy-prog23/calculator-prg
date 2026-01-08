@@ -20,7 +20,38 @@ const AdvanceCalculator = () => {
 
 	const [inputOp, setInputOp] = useState("");
 
-	const hendleCalculate = () => {};
+	const hendleCalculate = () => {
+		const numberOne = parseInt(inputOne);
+		const numberTwo = parseInt(inputTwo);
+
+		let result: number;
+
+		switch (inputOp) {
+			case "plus":
+				result = numberOne + numberTwo;
+				setInputTotal(result.toString());
+				break;
+
+			case "minus":
+				result = numberOne - numberTwo;
+				setInputTotal(result.toString());
+				break;
+
+			case "multiply":
+				result = numberOne * numberTwo;
+				setInputTotal(result.toString());
+				break;
+
+			case "divide":
+				result = numberOne / numberTwo;
+				setInputTotal(result.toString());
+				break;
+		}
+
+		setInputOne("");
+		setInputTwo("");
+		setInputOp("");
+	};
 
 	const hendleReset = () => {
 		setInputOne("");
